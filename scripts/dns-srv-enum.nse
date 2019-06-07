@@ -148,6 +148,9 @@ action = function(host)
     { name = "SIP", query = {"_sip._udp", "_sip._tcp"} },
     { name = "XMPP server-to-server", query = {"_xmpp-server._tcp"} },
     { name = "XMPP client-to-server", query = {"_xmpp-client._tcp"} },
+    { name = "Cisco Unified Communications Manager", query = {"_cisco-uds._tcp"} },
+    { name = "Cisco Unified Presence", query = {"_cuplogin._tcp"} },
+    { name = "Cisco VCS Expressway or Cisco Expressway-E server", query = {"_collab-edge._tls"} },
   }
 
   if ( not(checkFilter(services)) ) then
